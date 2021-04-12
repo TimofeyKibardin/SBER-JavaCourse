@@ -78,13 +78,16 @@ public class Exercise6_GenericArray {
         while (it.hasNext()) {
             System.out.print(it.next() + " ");
         }
+        System.out.println();
 
         //14 sort()
-        /* ob.sort();
+        DecreaseComparator decreaseComparator = new DecreaseComparator();
+
+        ob.sort(decreaseComparator);
         System.out.print("Массив ob после sort(): ");
         for (int i = 0; i < ob.size(); i++) {
             System.out.print(ob.get(i) + " ");
         }
-        System.out.println(); */
+        System.out.println();
     }
 }

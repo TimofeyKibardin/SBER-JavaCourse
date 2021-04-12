@@ -2,6 +2,20 @@ package Homework.Exercise6;
 
 import java.util.*;
 
+//Decrease comparator
+class DecreaseComparator implements Comparator<Integer> {
+    public int compare(Integer o1, Integer o2) {
+        return o2 - o1;
+    }
+}
+
+//Increase Comparator
+class IncreaseComparator implements Comparator<Integer> {
+    public int compare(Integer o1, Integer o2) {
+        return o1 - o2;
+    }
+}
+
 class MyArrayList <T> {
     private final int INIT_SIZE = 10;
     private final int CUT_RATE = 2;
@@ -196,8 +210,31 @@ class MyArrayList <T> {
         };
     }
 
+    /*Разделение*/
+    private int partition(T[] obj, int start, int end, Comparator comparator) {
+        int marker = start;
+        for (int i = start; i <= end; i++) {
+            if (comparator.compare(obj[i], obj[end]) <= 0) {
+                T temp = obj[marker]; //swap
+                obj[marker] = obj[i];
+                obj[i] = temp;
+                marker++;
+            }
+        }
+        return marker - 1;
+    }
+
+    /*Быстрая сортировка*/
+    private void quicksort(T[] obj, int start, int end, Comparator comparator) {
+        if (start >= end) return;
+
+        int pivot = partition(obj, start, end, comparator);
+        quicksort(obj, start, pivot - 1, comparator);
+        quicksort(obj, pivot + 1, end, comparator);
+    }
+
     /*Сортировка*/
-    /* void sort() {
-        Arrays.sort(obj, Comparator.comparing(Object::toString));
-    } */
+    void sort(Comparator comparator) {
+        quicksort((T[]) obj, 0, pointer - 1, comparator);
+    }
 }
