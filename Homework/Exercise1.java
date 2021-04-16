@@ -1,5 +1,6 @@
 //Сложение, вычитание....
-package Homework;
+//Поддерживается только в версии Java 14
+/* package Homework;
 
 public class Exercise1 {
     public static void main(String[] args) {
@@ -16,4 +17,4 @@ public class Exercise1 {
 
         System.out.printf("%.4f", c);
     }
-}
+} */
