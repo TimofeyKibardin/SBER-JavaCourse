@@ -29,12 +29,10 @@ package Homework.Exercise8;
 import jdk.jfr.Event;
 import java.io.*;
 import java.util.*;
-import java.nio.file.Paths;
 import java.nio.file.Path;
 import jdk.net.SocketFlow;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.List;
 
 
 public class LogFileParser {
