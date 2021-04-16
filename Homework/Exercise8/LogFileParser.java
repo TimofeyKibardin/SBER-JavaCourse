@@ -24,7 +24,7 @@
  * Все ключи разделены между сабой табуляцией.
  */
 
-package Homework;
+package Homework.Exercise8;
 
 import jdk.jfr.Event;
 import java.io.*;
@@ -37,7 +37,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 
-public class Exercise8_LogParser {
+public class LogFileParser {
 
     interface IPQuery {
         int getNumberOfUniqueIPs(Date after, Date before);
@@ -223,18 +223,5 @@ public class Exercise8_LogParser {
 
             return ipsForStatus;
         }
-    }
-
-
-
-
-    public static void main(String[] args) {
-        LogParser logParser = new LogParser(Paths.get(/*enter your path here*/));
-
-        System.out.println(logParser.getNumberOfUniqueIPs(null, null));
-        System.out.println(logParser.getUniqueIPs(null, null));
-        System.out.println(logParser.getIPsForUser("Amigo", null, null));
-        System.out.println(logParser.getIPsForEvent("DONE_TASK", null, null));
-        System.out.println(logParser.getIPsForStatus(SocketFlow.Status.OK, null, null));
     }
 }
