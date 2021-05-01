@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class TestLogParse {
     public static void main(String[] args) {
-        LogFileParser.LogParser logParser = new LogFileParser.LogParser(Paths.get("C:\\"));
+        LogFileParser.LogParser logParser = new LogFileParser.LogParser(Paths.get("C:\\Users\\timos\\Desktop\\Java_pogdotovka\\SBER_Course\\src\\LogFile.log"));
 
         System.out.println(logParser.getNumberOfUniqueIPs(null, null));
         System.out.println(logParser.getUniqueIPs(null, null));
