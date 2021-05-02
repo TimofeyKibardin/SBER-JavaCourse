@@ -1,7 +1,7 @@
 //На ввод подается n чисел не разделенных пробелом (строка вида 123235094659843).
 //Вычислить k-тый символ строки. Целочисленный параметр k передается пользователем
 
-package Homework;
+package Homework.Exercise2;
 import java.util.*;
 
 public class Exercise2 {

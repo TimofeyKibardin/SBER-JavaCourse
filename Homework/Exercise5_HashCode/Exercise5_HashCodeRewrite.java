@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Exercise5_HashCode;
 import java.util.*;
 
 /* Указываем тип, с которым может сравниваться класс,

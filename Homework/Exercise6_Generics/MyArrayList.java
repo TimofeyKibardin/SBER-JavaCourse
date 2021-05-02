@@ -1,4 +1,4 @@
-package Homework.Exercise6;
+package Homework.Exercise6_Generics;
 
 import java.util.*;
 

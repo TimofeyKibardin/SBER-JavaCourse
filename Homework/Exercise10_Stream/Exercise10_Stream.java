@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Exercise10_Stream;
 
 import java.util.*;
 import java.util.stream.Collectors;

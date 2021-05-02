@@ -1,4 +1,4 @@
-package Homework.Exercise8;
+package Homework.Exercise8_Logparser;
 
 import jdk.net.SocketFlow;
 import java.nio.file.Paths;

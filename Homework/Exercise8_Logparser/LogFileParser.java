@@ -24,9 +24,8 @@
  * Все ключи разделены между сабой табуляцией.
  */
 
-package Homework.Exercise8;
+package Homework.Exercise8_Logparser;
 
-import jdk.jfr.Event;
 import java.io.*;
 import java.util.*;
 import java.nio.file.Path;

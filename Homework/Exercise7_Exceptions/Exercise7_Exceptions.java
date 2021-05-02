@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Exercise7_Exceptions;
 
 import java.io.*;
 import java.util.Scanner;
